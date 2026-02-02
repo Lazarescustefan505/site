@@ -1,90 +1,41 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html>
 <head>
 <meta charset="UTF-8">
 <title>Note</title>
 <style>
-body{
-  margin:0;
-  font-family:Arial, sans-serif;
-  background:#f5f6fa;
+table{
+width:100%;
+border-collapse:collapse;
+font-family:Arial;
 }
-
-header{
-  background:white;
-  padding:15px;
-  text-align:center;
-  font-weight:bold;
-  border-bottom:1px solid #ddd;
+th{
+background:#2f6bb3;
+color:white;
+padding:10px;
 }
-
-.list{
-  padding:15px;
-}
-
-.card{
-  background:white;
-  border-radius:12px;
-  padding:15px;
-  margin-bottom:12px;
-  box-shadow:0 2px 6px rgba(0,0,0,0.05);
-}
-
-.row{
-  display:flex;
-  justify-content:space-between;
-  margin-bottom:6px;
-}
-
-.subject{
-  font-weight:bold;
-}
-
-.back{
-  margin:20px;
-  padding:12px;
-  background:#1a73e8;
-  color:white;
-  border:none;
-  border-radius:10px;
-  width:90%;
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
-  font-size:16px;
+td{
+border:1px solid #ccc;
+padding:8px;
 }
 </style>
 </head>
 <body>
 
-<header>Vizualizarea notelor</header>
+<h2>Catalog note</h2>
 
-<div class="list">
-
-<div class="card">
-  <div class="row">
-    <div class="subject">Topografie</div>
-    <div>8</div>
-  </div>
-</div>
-
-<div class="card">
-  <div class="row">
-    <div class="subject">Botanică</div>
-    <div>9</div>
-  </div>
-</div>
-
-<div class="card">
-  <div class="row">
-    <div class="subject">Fiziologia plantelor</div>
-    <div>10</div>
-  </div>
-</div>
-
-</div>
-
-<button class="back" onclick="location.href='menu.html'">Înapoi</button>
+<table>
+<tr>
+<th>Disciplină</th>
+<th>Profesor</th>
+<th>Nota</th>
+</tr>
+<tr><td>Topografie</td><td>Fulgulete</td><td>8</td></tr>
+<tr><td>Botanică</td><td>Nițu</td><td>9</td></tr>
+<tr><td>Informatică</td><td>Ciurea</td><td>9</td></tr>
+<tr><td>Engleză</td><td>Filip</td><td>9</td></tr>
+</table>
 
 </body>
 </html>
+

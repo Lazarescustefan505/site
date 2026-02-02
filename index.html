@@ -1,107 +1,52 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Contact</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-    }
-
-    header {
-      background: white;
-      display: flex;
-      align-items: center;
-      padding: 10px;
-    }
-
-    header img {
-      height: 60px;
-      margin-right: 10px;
-    }
-
-    .hero {
-      background-image: url("background.jpg"); /* numele pozei tale */
-      background-size: cover;
-      background-position: center;
-      height: 250px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 48px;
-      font-weight: bold;
-    }
-
-    .content {
-      padding: 20px;
-      background: white;
-    }
-
-    .row {
-      display: flex;
-      align-items: center;
-      margin-bottom: 15px;
-    }
-
-    .row img {
-      width: 30px;
-      margin-right: 15px;
-    }
-
-    .access {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 60px;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Contact</title>
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:url('IMG_20260201_215246_432.webp') no-repeat center/cover;
+height:100vh;
+}
+.overlay{
+background:rgba(0,0,0,0.4);
+height:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+width:80%;
+max-width:400px;
+}
+button{
+padding:15px 30px;
+font-size:20px;
+background:#0a6ed1;
+color:white;
+border:none;
+border-radius:10px;
+}
+</style>
 </head>
 <body>
-
-<header>
-  <img src="logo.png">
-  <h3>Universitatea Valahia din Târgoviște</h3>
-</header>
-
-<div class="hero">
-  Contact
+<div class="overlay">
+<div class="card">
+<h1>Contact</h1>
+<p>Universitatea Valahia din Târgoviște</p>
+<p>Str. Aleea Sinaia nr.13</p>
+<p>Tel: 0245.206.101</p>
+<button onclick="location.href='menu.html'">Continuă</button>
 </div>
-
-<div class="content">
-
-  <div class="row">
-    <img src="school.png">
-    Universitatea Valahia din Targoviste
-  </div>
-
-  <div class="row">
-    <img src="location.png">
-    Str. Aleea Sinaia, nr. 13, Targoviste
-  </div>
-
-  <div class="row">
-    <img src="phone.png">
-    Tel: 0245.206.101
-  </div>
-
-  <div class="row">
-    <img src="mail.png">
-    rectorat@valahia.ro
-  </div>
-
-  <div class="row">
-    <img src="clock.png">
-    Luni–Vineri: 08:00–16:00
-  </div>
-
 </div>
-
-<img src="accessibility.png" class="access">
-
 </body>
 </html>
+
 
 

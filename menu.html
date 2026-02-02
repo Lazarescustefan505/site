@@ -1,11 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="ro">
 <head>
 <meta charset="UTF-8">
 <title>Meniu</title>
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f5f6fa;
+}
+
+header{
+  background:white;
+  padding:15px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid #ddd;
+}
+
+.list{
+  padding:15px;
+}
+
+.card{
+  background:white;
+  border-radius:12px;
+  padding:16px;
+  margin-bottom:12px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 2px 6px rgba(0,0,0,0.05);
+  font-size:16px;
+}
+
+.left{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.arrow{
+  color:#888;
+  font-size:18px;
+}
+</style>
 </head>
 <body>
-<h2>Meniu</h2>
-<button onclick="location.href='login.html'">Discipline / Note</button>
+
+<header>
+  <div>☰</div>
+  <div>🔔</div>
+</header>
+
+<div class="list">
+
+<div class="card" onclick="location.href='note.html'">
+  <div class="left">➕ Vizualizarea notelor</div>
+  <div class="arrow">›</div>
+</div>
+
+<div class="card" onclick="location.href='taxe.html'">
+  <div class="left">💰 Vizualizarea taxelor</div>
+  <div class="arrow">›</div>
+</div>
+
+<div class="card" onclick="location.href='cazare.html'">
+  <div class="left">🏠 Dosare cazare</div>
+  <div class="arrow">›</div>
+</div>
+
+<div class="card" onclick="location.href='burse.html'">
+  <div class="left">✋ Cereri burse</div>
+  <div class="arrow">›</div>
+</div>
+
+</div>
+
 </body>
 </html>

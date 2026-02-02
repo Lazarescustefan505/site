@@ -1,67 +1,33 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html>
 <head>
 <meta charset="UTF-8">
 <title>Dashboard</title>
 <style>
-body{
-  margin:0;
-  font-family:Arial, sans-serif;
-  background:#f5f6fa;
+body{font-family:Arial;background:#f4f4f4;}
+.item{
+background:white;
+margin:15px;
+padding:20px;
+border-radius:15px;
+font-size:18px;
+display:flex;
+justify-content:space-between;
 }
-
-header{
-  background:white;
-  padding:15px;
-  text-align:center;
-  font-weight:bold;
-  border-bottom:1px solid #ddd;
-}
-
-.list{
-  padding:15px;
-}
-
-.card{
-  background:white;
-  border-radius:12px;
-  padding:16px;
-  margin-bottom:12px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  box-shadow:0 2px 6px rgba(0,0,0,0.05);
-  font-size:16px;
-}
-
-.arrow{
-  color:#888;
-}
+a{text-decoration:none;color:black;}
 </style>
 </head>
 <body>
 
-<header>Meniu student</header>
+<div class="item">Modificare temă →</div>
+<div class="item">Notificări →</div>
+<div class="item">Schimbare parolă →</div>
 
-<div class="list">
-
-<div class="card" onclick="location.href='note.html'">
-  Vizualizarea notelor <span class="arrow">›</span>
-</div>
-
-<div class="card" onclick="location.href='taxe.html'">
-  Vizualizarea taxelor <span class="arrow">›</span>
-</div>
-
-<div class="card" onclick="location.href='cazare.html'">
-  Dosare cazare <span class="arrow">›</span>
-</div>
-
-<div class="card" onclick="location.href='burse.html'">
-  Cereri burse <span class="arrow">›</span>
-</div>
-
-</div>
+<a href="note.html"><div class="item">Vizualizare note →</div></a>
+<div class="item">Vizualizare taxe →</div>
+<div class="item">Dosare cazare →</div>
+<div class="item">Cereri burse →</div>
 
 </body>
 </html>
+

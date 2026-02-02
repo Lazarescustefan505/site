@@ -1,31 +1,75 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="ro">
 <head>
 <meta charset="UTF-8">
 <title>Autentificare</title>
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f5f6fa;
+}
+
+.container{
+  padding:30px;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+input{
+  width:100%;
+  padding:14px;
+  margin-bottom:15px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  font-size:16px;
+}
+
+button{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:10px;
+  background:#1a73e8;
+  color:white;
+  font-size:16px;
+}
+
+.error{
+  color:red;
+  text-align:center;
+  margin-top:10px;
+}
+</style>
 
 <script>
 function login(){
-  let user = document.getElementById("user").value;
-  let pass = document.getElementById("pass").value;
+  let u = document.getElementById("user").value;
+  let p = document.getElementById("pass").value;
 
-  if(user === "5051212152514" && pass === "12122005"){
-    window.location.href = "dashboard.html";
+  if(u==="5051212152514" && p==="12122005"){
+    window.location.href="dashboard.html";
   } else {
-    alert("Utilizator sau parolă greșită!");
+    document.getElementById("err").innerText="Date incorecte!";
   }
 }
 </script>
-
 </head>
 <body>
 
-<h2>Autentificare</h2>
+<div class="container">
+  <h2>Autentificare</h2>
 
-<input id="user" placeholder="Utilizator sau e-mail"><br><br>
-<input id="pass" type="password" placeholder="Parolă"><br><br>
+  <input id="user" placeholder="Utilizator sau e-mail">
+  <input id="pass" type="password" placeholder="Parolă">
 
-<button onclick="login()">Autentificare</button>
+  <button onclick="login()">Autentificare</button>
+  <div id="err" class="error"></div>
+</div>
 
 </body>
 </html>

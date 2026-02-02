@@ -1,82 +1,45 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html>
 <head>
 <meta charset="UTF-8">
 <title>Meniu</title>
 <style>
-body{
-  margin:0;
-  font-family:Arial, sans-serif;
-  background:#f5f6fa;
+body{margin:0;font-family:Arial;background:#0b9ad8;}
+.header{
+background:white;
+padding:15px;
+text-align:center;
 }
-
-header{
-  background:white;
-  padding:15px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  border-bottom:1px solid #ddd;
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+padding:20px;
 }
-
-.list{
-  padding:15px;
+.box{
+background:#1bb0e6;
+padding:30px;
+color:white;
+text-align:center;
+border-radius:15px;
+font-size:18px;
 }
-
-.card{
-  background:white;
-  border-radius:12px;
-  padding:16px;
-  margin-bottom:12px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  box-shadow:0 2px 6px rgba(0,0,0,0.05);
-  font-size:16px;
-}
-
-.left{
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-
-.arrow{
-  color:#888;
-  font-size:18px;
-}
+a{text-decoration:none;}
 </style>
 </head>
 <body>
 
-<header>
-  <div>☰</div>
-  <div>🔔</div>
-</header>
-
-<div class="list">
-
-<div class="card" onclick="location.href='note.html'">
-  <div class="left">➕ Vizualizarea notelor</div>
-  <div class="arrow">›</div>
+<div class="header">
+<h2>Universitatea Valahia</h2>
 </div>
 
-<div class="card" onclick="location.href='taxe.html'">
-  <div class="left">💰 Vizualizarea taxelor</div>
-  <div class="arrow">›</div>
-</div>
-
-<div class="card" onclick="location.href='cazare.html'">
-  <div class="left">🏠 Dosare cazare</div>
-  <div class="arrow">›</div>
-</div>
-
-<div class="card" onclick="location.href='burse.html'">
-  <div class="left">✋ Cereri burse</div>
-  <div class="arrow">›</div>
-</div>
-
+<div class="grid">
+<a href="login.html"><div class="box">INTRANET</div></a>
+<a href="login.html"><div class="box">WEBMAIL</div></a>
+<a href="login.html"><div class="box">MOODLE</div></a>
+<a href="login.html"><div class="box">HELPDESK</div></a>
 </div>
 
 </body>
 </html>
+

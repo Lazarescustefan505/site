@@ -1,11 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="ro">
 <head>
-<meta charset="UTF-8">
-<title>Prima pagină</title>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    header {
+      background: white;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+    }
+
+    header img {
+      height: 40px;
+    }
+
+    .menu {
+      font-size: 28px;
+      cursor: pointer;
+      color: #0080c0;
+    }
+
+    .hero {
+      background: url("hero.jpg") center/cover no-repeat;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .content {
+      padding: 20px;
+      background: white;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .item span {
+      font-size: 22px;
+      margin-right: 10px;
+      color: #0080c0;
+    }
+
+    .accessibility {
+      position: fixed;
+      right: 15px;
+      bottom: 15px;
+      background: #1a4fff;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+    }
+  </style>
 </head>
 <body>
-<h1>Contact</h1>
-<button onclick="location.href='menu.html'">☰</button>
+
+<header>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Logo_Universitatea_Valahia.png">
+  <div class="menu" onclick="location.href='menu.html'">☰</div>
+</header>
+
+<div class="hero">
+  Contact
+</div>
+
+<div class="content">
+  <div class="item"><span>🏛</span>Universitatea Valahia din Târgoviște</div>
+  <div class="item"><span>📍</span>Str. Aleea Sinaia, nr. 13, Târgoviște</div>
+  <div class="item"><span>📞</span>0245.206.101 / 0245.217.692</div>
+  <div class="item"><span>✉️</span>rectorat@valahia.ro</div>
+  <div class="item"><span>🕒</span>Luni–Vineri, 08:00–16:00</div>
+</div>
+
+<div class="accessibility">♿</div>
+
 </body>
 </html>
+
